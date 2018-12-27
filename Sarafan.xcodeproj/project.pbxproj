@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20BD734585A888085646938F /* Pods_Sarafan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334365E3DCB3169E31722535 /* Pods_Sarafan.framework */; };
+		8717083A21D370B400EF530A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717083921D370B400EF530A /* AppDelegate.swift */; };
+		8717083C21D370B400EF530A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717083B21D370B400EF530A /* FirstViewController.swift */; };
+		8717083E21D370B400EF530A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717083D21D370B400EF530A /* SecondViewController.swift */; };
+		8717084121D370B400EF530A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8717083F21D370B400EF530A /* Main.storyboard */; };
+		8717084321D370BF00EF530A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8717084221D370BF00EF530A /* Assets.xcassets */; };
+		8717084621D370BF00EF530A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8717084421D370BF00EF530A /* LaunchScreen.storyboard */; };
+		8717085121D370C000EF530A /* SarafanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717085021D370C000EF530A /* SarafanTests.swift */; };
+		8717085C21D370C000EF530A /* SarafanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717085B21D370C000EF530A /* SarafanUITests.swift */; };
+		8717086A21D401D600EF530A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717086921D401D600EF530A /* ThirdViewController.swift */; };
+		8717086C21D4077A00EF530A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8717086B21D4077A00EF530A /* GoogleService-Info.plist */; };
+		878F117221D40C3500C23DE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F117121D40C3500C23DE6 /* LoginViewController.swift */; };
+		878F117421D40C4700C23DE6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F117321D40C4700C23DE6 /* SignUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8717084D21D370C000EF530A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717082E21D370B400EF530A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8717083521D370B400EF530A;
+			remoteInfo = Sarafan;
+		};
+		8717085821D370C000EF530A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717082E21D370B400EF530A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8717083521D370B400EF530A;
+			remoteInfo = Sarafan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22156EE6D1E5D9E5B9375F9A /* Pods-Sarafan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sarafan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan.debug.xcconfig"; sourceTree = "<group>"; };
+		334365E3DCB3169E31722535 /* Pods_Sarafan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sarafan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372BBB75A1951FA52906285 /* Pods-Sarafan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sarafan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan.release.xcconfig"; sourceTree = "<group>"; };
+		8717083621D370B400EF530A /* Sarafan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarafan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8717083921D370B400EF530A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8717083B21D370B400EF530A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8717083D21D370B400EF530A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8717084021D370B400EF530A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8717084221D370BF00EF530A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8717084521D370BF00EF530A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8717084721D370BF00EF530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8717084C21D370C000EF530A /* SarafanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SarafanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8717085021D370C000EF530A /* SarafanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarafanTests.swift; sourceTree = "<group>"; };
+		8717085221D370C000EF530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8717085721D370C000EF530A /* SarafanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SarafanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8717085B21D370C000EF530A /* SarafanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarafanUITests.swift; sourceTree = "<group>"; };
+		8717085D21D370C000EF530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8717086921D401D600EF530A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		8717086B21D4077A00EF530A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		878F117121D40C3500C23DE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		878F117321D40C4700C23DE6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8717083321D370B400EF530A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BD734585A888085646938F /* Pods_Sarafan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717084921D370C000EF530A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717085421D370C000EF530A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF0FA32D3BA9360ADFDAB8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22156EE6D1E5D9E5B9375F9A /* Pods-Sarafan.debug.xcconfig */,
+				5372BBB75A1951FA52906285 /* Pods-Sarafan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8717082D21D370B400EF530A = {
+			isa = PBXGroup;
+			children = (
+				8717083821D370B400EF530A /* Sarafan */,
+				8717084F21D370C000EF530A /* SarafanTests */,
+				8717085A21D370C000EF530A /* SarafanUITests */,
+				8717083721D370B400EF530A /* Products */,
+				0EF0FA32D3BA9360ADFDAB8E /* Pods */,
+				E91C6CC6C04C26B915A14DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8717083721D370B400EF530A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8717083621D370B400EF530A /* Sarafan.app */,
+				8717084C21D370C000EF530A /* SarafanTests.xctest */,
+				8717085721D370C000EF530A /* SarafanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8717083821D370B400EF530A /* Sarafan */ = {
+			isa = PBXGroup;
+			children = (
+				8717083921D370B400EF530A /* AppDelegate.swift */,
+				8717083B21D370B400EF530A /* FirstViewController.swift */,
+				8717083D21D370B400EF530A /* SecondViewController.swift */,
+				8717086921D401D600EF530A /* ThirdViewController.swift */,
+				878F117121D40C3500C23DE6 /* LoginViewController.swift */,
+				878F117321D40C4700C23DE6 /* SignUpViewController.swift */,
+				8717083F21D370B400EF530A /* Main.storyboard */,
+				8717084221D370BF00EF530A /* Assets.xcassets */,
+				8717084421D370BF00EF530A /* LaunchScreen.storyboard */,
+				8717084721D370BF00EF530A /* Info.plist */,
+				8717086B21D4077A00EF530A /* GoogleService-Info.plist */,
+			);
+			path = Sarafan;
+			sourceTree = "<group>";
+		};
+		8717084F21D370C000EF530A /* SarafanTests */ = {
+			isa = PBXGroup;
+			children = (
+				8717085021D370C000EF530A /* SarafanTests.swift */,
+				8717085221D370C000EF530A /* Info.plist */,
+			);
+			path = SarafanTests;
+			sourceTree = "<group>";
+		};
+		8717085A21D370C000EF530A /* SarafanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8717085B21D370C000EF530A /* SarafanUITests.swift */,
+				8717085D21D370C000EF530A /* Info.plist */,
+			);
+			path = SarafanUITests;
+			sourceTree = "<group>";
+		};
+		E91C6CC6C04C26B915A14DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				334365E3DCB3169E31722535 /* Pods_Sarafan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8717083521D370B400EF530A /* Sarafan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8717086021D370C000EF530A /* Build configuration list for PBXNativeTarget "Sarafan" */;
+			buildPhases = (
+				14F61AC785E64AFAE58C8CC4 /* [CP] Check Pods Manifest.lock */,
+				8717083221D370B400EF530A /* Sources */,
+				8717083321D370B400EF530A /* Frameworks */,
+				8717083421D370B400EF530A /* Resources */,
+				DB6820B89D8812E300971EBE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sarafan;
+			productName = Sarafan;
+			productReference = 8717083621D370B400EF530A /* Sarafan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8717084B21D370C000EF530A /* SarafanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8717086321D370C000EF530A /* Build configuration list for PBXNativeTarget "SarafanTests" */;
+			buildPhases = (
+				8717084821D370C000EF530A /* Sources */,
+				8717084921D370C000EF530A /* Frameworks */,
+				8717084A21D370C000EF530A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8717084E21D370C000EF530A /* PBXTargetDependency */,
+			);
+			name = SarafanTests;
+			productName = SarafanTests;
+			productReference = 8717084C21D370C000EF530A /* SarafanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8717085621D370C000EF530A /* SarafanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8717086621D370C000EF530A /* Build configuration list for PBXNativeTarget "SarafanUITests" */;
+			buildPhases = (
+				8717085321D370C000EF530A /* Sources */,
+				8717085421D370C000EF530A /* Frameworks */,
+				8717085521D370C000EF530A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8717085921D370C000EF530A /* PBXTargetDependency */,
+			);
+			name = SarafanUITests;
+			productName = SarafanUITests;
+			productReference = 8717085721D370C000EF530A /* SarafanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8717082E21D370B400EF530A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Denis Zayakin";
+				TargetAttributes = {
+					8717083521D370B400EF530A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8717084B21D370C000EF530A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8717083521D370B400EF530A;
+					};
+					8717085621D370C000EF530A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8717083521D370B400EF530A;
+					};
+				};
+			};
+			buildConfigurationList = 8717083121D370B400EF530A /* Build configuration list for PBXProject "Sarafan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8717082D21D370B400EF530A;
+			productRefGroup = 8717083721D370B400EF530A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8717083521D370B400EF530A /* Sarafan */,
+				8717084B21D370C000EF530A /* SarafanTests */,
+				8717085621D370C000EF530A /* SarafanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8717083421D370B400EF530A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8717084621D370BF00EF530A /* LaunchScreen.storyboard in Resources */,
+				8717086C21D4077A00EF530A /* GoogleService-Info.plist in Resources */,
+				8717084321D370BF00EF530A /* Assets.xcassets in Resources */,
+				8717084121D370B400EF530A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717084A21D370C000EF530A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717085521D370C000EF530A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F61AC785E64AFAE58C8CC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sarafan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6820B89D8812E300971EBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8717083221D370B400EF530A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878F117421D40C4700C23DE6 /* SignUpViewController.swift in Sources */,
+				8717083E21D370B400EF530A /* SecondViewController.swift in Sources */,
+				8717083A21D370B400EF530A /* AppDelegate.swift in Sources */,
+				8717086A21D401D600EF530A /* ThirdViewController.swift in Sources */,
+				878F117221D40C3500C23DE6 /* LoginViewController.swift in Sources */,
+				8717083C21D370B400EF530A /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717084821D370C000EF530A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8717085121D370C000EF530A /* SarafanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8717085321D370C000EF530A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8717085C21D370C000EF530A /* SarafanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8717084E21D370C000EF530A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8717083521D370B400EF530A /* Sarafan */;
+			targetProxy = 8717084D21D370C000EF530A /* PBXContainerItemProxy */;
+		};
+		8717085921D370C000EF530A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8717083521D370B400EF530A /* Sarafan */;
+			targetProxy = 8717085821D370C000EF530A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8717083F21D370B400EF530A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8717084021D370B400EF530A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8717084421D370BF00EF530A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8717084521D370BF00EF530A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8717085E21D370C000EF530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8717085F21D370C000EF530A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8717086121D370C000EF530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22156EE6D1E5D9E5B9375F9A /* Pods-Sarafan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SZLS5SJ8N;
+				INFOPLIST_FILE = Sarafan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.Sarafan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8717086221D370C000EF530A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5372BBB75A1951FA52906285 /* Pods-Sarafan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SZLS5SJ8N;
+				INFOPLIST_FILE = Sarafan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.Sarafan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8717086421D370C000EF530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarafanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.SarafanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sarafan.app/Sarafan";
+			};
+			name = Debug;
+		};
+		8717086521D370C000EF530A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarafanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.SarafanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sarafan.app/Sarafan";
+			};
+			name = Release;
+		};
+		8717086721D370C000EF530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarafanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.SarafanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sarafan;
+			};
+			name = Debug;
+		};
+		8717086821D370C000EF530A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarafanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = idkek.SarafanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sarafan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8717083121D370B400EF530A /* Build configuration list for PBXProject "Sarafan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8717085E21D370C000EF530A /* Debug */,
+				8717085F21D370C000EF530A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8717086021D370C000EF530A /* Build configuration list for PBXNativeTarget "Sarafan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8717086121D370C000EF530A /* Debug */,
+				8717086221D370C000EF530A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8717086321D370C000EF530A /* Build configuration list for PBXNativeTarget "SarafanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8717086421D370C000EF530A /* Debug */,
+				8717086521D370C000EF530A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8717086621D370C000EF530A /* Build configuration list for PBXNativeTarget "SarafanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8717086721D370C000EF530A /* Debug */,
+				8717086821D370C000EF530A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8717082E21D370B400EF530A /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Sarafan {
+  umbrella header "Pods-Sarafan-umbrella.h"
+
+  export *
+  module * { export * }
+}

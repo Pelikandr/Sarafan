@@ -17,9 +17,9 @@
 		8717085121D370C000EF530A /* SarafanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717085021D370C000EF530A /* SarafanTests.swift */; };
 		8717085C21D370C000EF530A /* SarafanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717085B21D370C000EF530A /* SarafanUITests.swift */; };
 		8717086A21D401D600EF530A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717086921D401D600EF530A /* ThirdViewController.swift */; };
-		8717086C21D4077A00EF530A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8717086B21D4077A00EF530A /* GoogleService-Info.plist */; };
 		878F117221D40C3500C23DE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F117121D40C3500C23DE6 /* LoginViewController.swift */; };
 		878F117421D40C4700C23DE6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F117321D40C4700C23DE6 /* SignUpViewController.swift */; };
+		87F4775B21D568BE00A0EF08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87F4775A21D568BE00A0EF08 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		8717085B21D370C000EF530A /* SarafanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarafanUITests.swift; sourceTree = "<group>"; };
 		8717085D21D370C000EF530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8717086921D401D600EF530A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		8717086B21D4077A00EF530A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		878F117121D40C3500C23DE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		878F117321D40C4700C23DE6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		87F4775A21D568BE00A0EF08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				8717084221D370BF00EF530A /* Assets.xcassets */,
 				8717084421D370BF00EF530A /* LaunchScreen.storyboard */,
 				8717084721D370BF00EF530A /* Info.plist */,
-				8717086B21D4077A00EF530A /* GoogleService-Info.plist */,
+				87F4775A21D568BE00A0EF08 /* GoogleService-Info.plist */,
 			);
 			path = Sarafan;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8717084621D370BF00EF530A /* LaunchScreen.storyboard in Resources */,
-				8717086C21D4077A00EF530A /* GoogleService-Info.plist in Resources */,
+				87F4775B21D568BE00A0EF08 /* GoogleService-Info.plist in Resources */,
 				8717084321D370BF00EF530A /* Assets.xcassets in Resources */,
 				8717084121D370B400EF530A /* Main.storyboard in Resources */,
 			);

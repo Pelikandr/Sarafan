@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="-676"/>
+            <point key="canvasLocation" x="888.79999999999995" y="-988.15592203898063"/>
         </scene>
         <!--Item-->
         <scene sceneID="DrF-v3-2zH">
@@ -54,6 +54,16 @@
                     <view key="view" contentMode="scaleToFill" id="804-Hi-o9c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRn-cm-ztA">
+                                <rect key="frame" x="159" y="301" width="56" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="logOutAction:" destination="A6P-CF-uxk" eventType="touchUpInside" id="Eva-kp-zfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3MC-kb-W3Y"/>
                     </view>
@@ -61,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0s2-Z2-dy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="709"/>
+            <point key="canvasLocation" x="889" y="432"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -98,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="4"/>
+            <point key="canvasLocation" x="889" y="-273"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="zhw-Nm-qOU">
@@ -178,7 +188,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-63" y="-273"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="k8M-dd-Ert">
@@ -230,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3J-if-bWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1174" y="497"/>
+            <point key="canvasLocation" x="-890" y="493"/>
         </scene>
     </scenes>
     <resources>

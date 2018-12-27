@@ -16,6 +16,7 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // выход из профиля
     @IBAction func logOutAction(_ sender: Any) {
         do {
             try Auth.auth().signOut()

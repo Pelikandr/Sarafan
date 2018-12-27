@@ -9,18 +9,30 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var passworConfirm: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        email.delegate = self as? UITextFieldDelegate
+        password.delegate = self as? UITextFieldDelegate
+        email.tag = 0 //теги для return
+        password.tag = 1
+    }
+    // функция return (клавиатура переключается на следующий textfield)
+    func textFieldShouldReturn(_ email: UITextField) -> Bool
+    {
+        if let nextField = email.superview?.viewWithTag(email.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            email.resignFirstResponder()
+        }
+        return false
     }
     
+    // проверяет выполнен ли вход
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         if Auth.auth().currentUser != nil {
@@ -28,6 +40,13 @@ class LoginViewController: UIViewController {
         }
     }
     
+    // при нажатии на свободное место скрывается клавиатура
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+    }
+    
+    // логин
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
             if error == nil{

@@ -234,7 +234,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <segue destination="brT-k2-Cay" kind="presentation" id="bY0-Yh-gEi"/>
+                                    <segue destination="brT-k2-Cay" kind="presentation" identifier="toLoginViewController" id="bY0-Yh-gEi"/>
                                 </connections>
                             </button>
                         </subviews>

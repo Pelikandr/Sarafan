@@ -13,6 +13,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var show: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         password.delegate = self as? UITextFieldDelegate
         email.tag = 0 //теги для return
         password.tag = 1
+        
+       
     }
+    
     // функция return (клавиатура переключается на следующий textfield)
     func textFieldShouldReturn(_ email: UITextField) -> Bool
     {
@@ -46,6 +50,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         password.resignFirstResponder()
     }
     
+    //secure text
+    @IBAction func showHidePassword (_ sender: Any) {
+        if password.isSecureTextEntry == true {
+            password.isSecureTextEntry = false
+            show.setTitle("Hide", for: .normal)
+        } else {
+            password.isSecureTextEntry = true
+            show.setTitle("Show", for: .normal)
+        }
+    }
     // логин
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in

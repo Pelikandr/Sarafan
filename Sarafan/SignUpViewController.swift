@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var passwordConfirm: UITextField!
+    @IBOutlet weak var show: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         email.resignFirstResponder()
         password.resignFirstResponder()
         passwordConfirm.resignFirstResponder()
+    }
+    
+    //secure text
+    @IBAction func showHidePassword (_ sender: Any) {
+        if password.isSecureTextEntry == true {
+            password.isSecureTextEntry = false
+            passwordConfirm.isSecureTextEntry = false
+            show.setTitle("Hide", for: .normal)
+        } else {
+            password.isSecureTextEntry = true
+            passwordConfirm.isSecureTextEntry = true
+            show.setTitle("Show", for: .normal)
+        }
     }
     
     // регистрация

@@ -118,13 +118,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUQ-Fl-JKn">
-                                <rect key="frame" x="77" y="276" width="220" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ht-Fw-c7I">
                                 <rect key="frame" x="77" y="226" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,6 +150,22 @@
                                     <segue destination="aHE-xt-hzZ" kind="presentation" id="KJD-JO-xJ8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxg-Eq-q37">
+                                <rect key="frame" x="305" y="275" width="43" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showHidePassword:" destination="brT-k2-Cay" eventType="touchUpInside" id="Mzv-qD-fps"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUQ-Fl-JKn">
+                                <rect key="frame" x="77" y="276" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NV2-RH-5h2"/>
@@ -164,6 +173,7 @@
                     <connections>
                         <outlet property="email" destination="5Ht-Fw-c7I" id="Tb5-Gc-vbJ"/>
                         <outlet property="password" destination="pUQ-Fl-JKn" id="krM-ZC-a6y"/>
+                        <outlet property="show" destination="Wxg-Eq-q37" id="erh-4t-ZFI"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="toTabBarController" id="Whg-f7-SpW"/>
                     </connections>
                 </viewController>
@@ -212,14 +222,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhM-q6-d5a">
                                 <rect key="frame" x="77" y="271" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfj-aS-NRi">
                                 <rect key="frame" x="77" y="221" width="220" height="30"/>
@@ -237,6 +247,15 @@
                                     <segue destination="brT-k2-Cay" kind="presentation" identifier="toLoginViewController" id="bY0-Yh-gEi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMi-tK-90s">
+                                <rect key="frame" x="308" y="271" width="43" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showHidePassword:" destination="aHE-xt-hzZ" eventType="touchUpInside" id="Xgx-a1-VT2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QJ0-4X-Eqj"/>
@@ -245,6 +264,7 @@
                         <outlet property="email" destination="tfj-aS-NRi" id="c9K-ah-Kqq"/>
                         <outlet property="password" destination="HhM-q6-d5a" id="FoR-ts-37l"/>
                         <outlet property="passwordConfirm" destination="67j-KX-HMe" id="dBT-fy-5Bo"/>
+                        <outlet property="show" destination="rMi-tK-90s" id="DyI-f1-9u8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3J-if-bWz" userLabel="First Responder" sceneMemberID="firstResponder"/>

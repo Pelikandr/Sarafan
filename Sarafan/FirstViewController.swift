@@ -25,9 +25,9 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let db = Database.database().reference()
-        db.setValue("Hello Firebase")
+        // test connection
+        //let db = Database.database().reference()
+        //db.setValue("Hello Firebase")
     }
     
     @IBAction func sendMessage() {

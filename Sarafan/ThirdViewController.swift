@@ -20,6 +20,7 @@ class ThirdViewController: UIViewController {
     @IBAction func logOutAction(_ sender: Any) {
         do {
             try Auth.auth().signOut()
+            EventList.removeAll()
         }
         catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)

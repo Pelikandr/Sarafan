@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+import FirebaseDatabase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -39,8 +41,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // проверяет выполнен ли вход
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
+        // занесение данных в EventTableView из Firebase
+        let messageDB = Database.database().reference().child("Events")
+        messageDB.observe(.childAdded, with: { snapshot in
+            let snapshotValue = snapshot.value as! NSDictionary
+            EventList.append(snapshotValue["EventBody"] as! String)
+        })
+        // вызов метода обновления tableView
+        let ETC: EventTableViewController = EventTableViewController()
+        ETC.refreshArray()
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "toTabBarController", sender: nil)
+ 
         }
     }
     
@@ -74,9 +86,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.present(alertController, animated: true, completion: nil)
             }
         }
-        
     }
-
+    
+    @IBAction func EventTableUpdate(_ sender: Any) {
+        let messageDB = Database.database().reference().child("Events")
+        messageDB.observe(.childAdded, with: { snapshot in
+            let snapshotValue = snapshot.value as! NSDictionary
+            EventList.append(snapshotValue["EventBody"] as! String)
+        })
+    }
     /*
     // MARK: - Navigation
 

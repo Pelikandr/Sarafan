@@ -31,6 +31,19 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func sendMessage() {
+        
+        let messagesDB = Database.database().reference().child("Events") // child database
+        let messageDictionary : NSDictionary = ["Sender" : Auth.auth().currentUser!.email as String!, "EventBody" : input.text!]
+        messagesDB.childByAutoId().setValue(messageDictionary) {
+            (error, ref) in
+            if error != nil {
+                print(error!)
+            }
+            else {
+                print("Message saved successfully!")
+            }
+        }
+        /*
         let messagesDB = Database.database().reference().child("Messages") // child database
         let messageDictionary : NSDictionary = ["Sender" : Auth.auth().currentUser!.email as String!, "MessageBody" : input.text!]
         messagesDB.childByAutoId().setValue(messageDictionary) {
@@ -42,17 +55,37 @@ class FirstViewController: UIViewController {
                 print("Message saved successfully!")
             }
         }
+ */
     }
     
+    // при нажатии на свободное место скрывается клавиатура
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        input.resignFirstResponder()
+    }
+
+    
     @IBAction func getMessage () {
-        let messageDB = Database.database().reference().child("Messages")
+        
+         let messageDB = Database.database().reference().child("Events")
         messageDB.observe(.childAdded, with: { snapshot in
             let snapshotValue = snapshot.value as! NSDictionary
-            let text = snapshotValue["MessageBody"] as! String
+            let text = snapshotValue["EventBody"] as! String
+            //EventList.append(snapshotValue["EventBody"] as! String)
             let sender = snapshotValue["Sender"] as! String
             self.messageLabel.text = text
             self.senderLabel.text = sender
         })
+        /*
+        let messageDB = Database.database().reference().child("Messages")
+        messageDB.observe(.childAdded, with: { snapshot in
+            let snapshotValue = snapshot.value as! NSDictionary
+            let text = snapshotValue["MessageBody"] as! String
+            EventList.append(snapshotValue["MessageBody"] as! String)
+            let sender = snapshotValue["Sender"] as! String
+            self.messageLabel.text = text
+            self.senderLabel.text = sender
+        })
+ */
     }
     
 }

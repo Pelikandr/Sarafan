@@ -5,7 +5,8 @@
 //  Created by Denis Zayakin on 12/26/18.
 //  Copyright © 2018 Denis Zayakin. All rights reserved.
 //
-
+import Foundation
+import Firebase
 import UIKit
 import FirebaseAuth
 

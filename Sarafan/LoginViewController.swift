@@ -45,7 +45,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let messageDB = Database.database().reference().child("Events")
         messageDB.observe(.childAdded, with: { snapshot in
             let snapshotValue = snapshot.value as! NSDictionary
-            EventList.append(snapshotValue["EventBody"] as! String)
+            DataSource.shared.append(snapshotValue["EventBody"] as! String)
         })
         // вызов метода обновления tableView
         let ETC: EventTableViewController = EventTableViewController()
@@ -92,7 +92,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let messageDB = Database.database().reference().child("Events")
         messageDB.observe(.childAdded, with: { snapshot in
             let snapshotValue = snapshot.value as! NSDictionary
-            EventList.append(snapshotValue["EventBody"] as! String)
+            DataSource.shared.append(snapshotValue["EventBody"] as! String)
         })
     }
     /*

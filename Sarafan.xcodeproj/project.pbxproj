@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20BD734585A888085646938F /* Pods_Sarafan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334365E3DCB3169E31722535 /* Pods_Sarafan.framework */; };
+		66D6111A22848A5200D1BD28 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6111922848A5200D1BD28 /* EventViewController.swift */; };
 		8717083A21D370B400EF530A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717083921D370B400EF530A /* AppDelegate.swift */; };
 		8717083C21D370B400EF530A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717083B21D370B400EF530A /* FirstViewController.swift */; };
 		8717084121D370B400EF530A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8717083F21D370B400EF530A /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		22156EE6D1E5D9E5B9375F9A /* Pods-Sarafan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sarafan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan.debug.xcconfig"; sourceTree = "<group>"; };
 		334365E3DCB3169E31722535 /* Pods_Sarafan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sarafan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5372BBB75A1951FA52906285 /* Pods-Sarafan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sarafan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan.release.xcconfig"; sourceTree = "<group>"; };
+		66D6111922848A5200D1BD28 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		8717083621D370B400EF530A /* Sarafan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarafan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8717083921D370B400EF530A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8717083B21D370B400EF530A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				8717086921D401D600EF530A /* ThirdViewController.swift */,
 				878F117121D40C3500C23DE6 /* LoginViewController.swift */,
 				878F117321D40C4700C23DE6 /* SignUpViewController.swift */,
+				66D6111922848A5200D1BD28 /* EventViewController.swift */,
 				8717083F21D370B400EF530A /* Main.storyboard */,
 				8717084221D370BF00EF530A /* Assets.xcassets */,
 				8717084421D370BF00EF530A /* LaunchScreen.storyboard */,
@@ -330,7 +333,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -347,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sarafan/Pods-Sarafan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -362,6 +365,7 @@
 				8717083A21D370B400EF530A /* AppDelegate.swift in Sources */,
 				8717086A21D401D600EF530A /* ThirdViewController.swift in Sources */,
 				879C1AE5226B6F13001F1A9A /* EventTableViewController.swift in Sources */,
+				66D6111A22848A5200D1BD28 /* EventViewController.swift in Sources */,
 				878F117221D40C3500C23DE6 /* LoginViewController.swift in Sources */,
 				8717083C21D370B400EF530A /* FirstViewController.swift in Sources */,
 			);

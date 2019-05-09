@@ -10,5 +10,22 @@ import Firebase
 import FirebaseDatabase
 import Foundation
 
-//var EventList: [String] = ["Event #2123", "Event #2134"]
-var EventList: [String] = []
+//Singleton
+class DataSource {
+
+    static var shared = DataSource()
+
+    private(set) var eventList: [String] = []
+
+    func append(_ newEvent: String) {
+        self.eventList.append(newEvent)
+    }
+
+    func set(_ newEventsList: [String]) {
+        self.eventList = newEventsList
+    }
+
+    func clear() {
+        self.eventList.removeAll()
+    }
+}

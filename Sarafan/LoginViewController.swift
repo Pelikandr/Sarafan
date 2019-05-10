@@ -23,8 +23,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         password.delegate = self as? UITextFieldDelegate
         email.tag = 0 //теги для return
         password.tag = 1
-        
-       
     }
     
     // функция return (клавиатура переключается на следующий textfield)
@@ -45,14 +43,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let messageDB = Database.database().reference().child("Events")
         messageDB.observe(.childAdded, with: { snapshot in
             let snapshotValue = snapshot.value as! NSDictionary
-            DataSource.shared.append(snapshotValue["EventBody"] as! String)
+            let snapshotValue2 = snapshot.value as! NSDictionary
+            DataSource.shared.append(snapshotValue["EventBody"] as! String, newEventInfo: snapshotValue2["EventInfo"] as! String)
         })
         // вызов метода обновления tableView
         let ETC: EventTableViewController = EventTableViewController()
         ETC.refreshArray()
+        
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "toTabBarController", sender: nil)
- 
         }
     }
     
@@ -72,6 +71,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             show.setTitle("Show", for: .normal)
         }
     }
+    
     // логин
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
@@ -88,13 +88,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func EventTableUpdate(_ sender: Any) {
-        let messageDB = Database.database().reference().child("Events")
-        messageDB.observe(.childAdded, with: { snapshot in
-            let snapshotValue = snapshot.value as! NSDictionary
-            DataSource.shared.append(snapshotValue["EventBody"] as! String)
-        })
-    }
     /*
     // MARK: - Navigation
 

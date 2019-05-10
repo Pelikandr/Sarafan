@@ -16,16 +16,20 @@ class DataSource {
     static var shared = DataSource()
 
     private(set) var eventList: [String] = []
+    private(set) var EventInfo: [String] = []
 
-    func append(_ newEvent: String) {
+    func append(_ newEvent: String, newEventInfo: String) {
         self.eventList.append(newEvent)
+        self.EventInfo.append(newEventInfo)
     }
 
-    func set(_ newEventsList: [String]) {
+    func set(_ newEventsList: [String], newEventInfoList: [String]) {
         self.eventList = newEventsList
+        self.EventInfo = newEventInfoList
     }
 
     func clear() {
         self.eventList.removeAll()
+        self.EventInfo.removeAll()
     }
 }

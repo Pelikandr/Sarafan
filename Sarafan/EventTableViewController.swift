@@ -13,7 +13,8 @@ import FirebaseDatabase
 class EventTableViewController: UITableViewController {
 
     var selectedEventName: String?
-
+    var selectedEventInfo: String?
+    
     @objc func refreshArray() {
         tableView.reloadData()
         refreshControl?.endRefreshing()
@@ -55,6 +56,7 @@ class EventTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedEventName = DataSource.shared.eventList[indexPath.row]
+        self.selectedEventInfo = DataSource.shared.EventInfo[indexPath.row]
         self.performSegue(withIdentifier: "ShowEventDetail", sender: nil)
     }
     /*
@@ -100,6 +102,7 @@ class EventTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextVC = segue.destination as? EventViewController {
             nextVC.eventName = self.selectedEventName
+            nextVC.eventInfo = self.selectedEventInfo
         }
     }
 

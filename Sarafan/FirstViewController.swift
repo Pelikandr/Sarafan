@@ -66,7 +66,7 @@ class FirstViewController: UIViewController, UITextViewDelegate, UITextFieldDele
                 
                     // alert пропадает через 1,5 секунды
                     self.present(alertController, animated: true, completion: nil)
-                    let when = DispatchTime.now() + 1
+                    let when = DispatchTime.now() + 2
                     DispatchQueue.main.asyncAfter(deadline: when){
                         alertController.dismiss(animated: true, completion: nil)
                     }
@@ -75,7 +75,7 @@ class FirstViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         } else {
             let alertController2 = UIAlertController(title: nil, message: "Name or description is empty!", preferredStyle: .alert)
             self.present(alertController2, animated: true, completion: nil)
-            let when = DispatchTime.now() + 1
+            let when = DispatchTime.now() + 2
             DispatchQueue.main.asyncAfter(deadline: when){
                 alertController2.dismiss(animated: true, completion: nil)
             }

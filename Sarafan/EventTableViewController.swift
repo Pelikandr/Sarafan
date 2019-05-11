@@ -10,10 +10,34 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class EventTableViewController: UITableViewController {
 
-    var selectedEventName: String?
-    var selectedEventInfo: String?
+
+class EventTableViewController: UITableViewController, UIViewControllerPreviewingDelegate{
+    
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let indexPath = tableView.indexPathForRow(at: location),
+            let cell = tableView.cellForRow(at: indexPath)
+            else { return nil }
+        previewingContext.sourceRect = cell.frame
+        DataSource.shared.selectedEventName = DataSource.shared.eventList[indexPath.row]
+        DataSource.shared.selectedEventInfo = DataSource.shared.EventInfo[indexPath.row]
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "EventViewController") as? EventViewController
+            else { preconditionFailure("Expected a EventViewController") }
+        //let eventVC: EventViewController = EventViewController()
+        //eventVC.eventNameLabel.text = eventVC.eventName
+        //eventVC.eventTextView.text = eventVC.eventInfo
+
+        return viewController
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        navigationController?.pushViewController(viewControllerToCommit, animated: true)
+        
+    }
+    
+    //var selectedEventName: String?
+    //var selectedEventInfo: String?
     
     @objc func refreshArray() {
         // удаление из Firebase
@@ -21,13 +45,22 @@ class EventTableViewController: UITableViewController {
         tableView.reloadData()
         refreshControl?.endRefreshing()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action:  #selector(refreshArray), for: .valueChanged)
         self.refreshControl = refreshControl
+        
+        registerForPreviewing(with: self, sourceView: tableView)
+        
+        /*if UIApplication.shared.keyWindow?.traitCollection.forceTouchCapability == UIForceTouchCapability.available
+        {
+            registerForPreviewing(with: self, sourceView: view)
+            
+        }
+        */
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -56,9 +89,14 @@ class EventTableViewController: UITableViewController {
         return cell
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedEventName = DataSource.shared.eventList[indexPath.row]
-        self.selectedEventInfo = DataSource.shared.EventInfo[indexPath.row]
+        
+        DataSource.shared.selectedEventName = DataSource.shared.eventList[indexPath.row]
+        DataSource.shared.selectedEventInfo = DataSource.shared.EventInfo[indexPath.row]
+        //self.selectedEventName = DataSource.shared.eventList[indexPath.row]
+        //self.selectedEventInfo = DataSource.shared.EventInfo[indexPath.row]
         self.performSegue(withIdentifier: "ShowEventDetail", sender: nil)
     }
     /*
@@ -99,7 +137,7 @@ class EventTableViewController: UITableViewController {
 
     // MARK: - Navigation
 
-
+/*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextVC = segue.destination as? EventViewController {
@@ -107,6 +145,6 @@ class EventTableViewController: UITableViewController {
             nextVC.eventInfo = self.selectedEventInfo
         }
     }
-
+*/
 
 }

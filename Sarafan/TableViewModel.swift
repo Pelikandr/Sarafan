@@ -17,6 +17,9 @@ class DataSource {
 
     private(set) var eventList: [String] = []
     private(set) var EventInfo: [String] = []
+    
+    var selectedEventName: String?
+    var selectedEventInfo: String?
 
     func append(_ newEvent: String, newEventInfo: String) {
         self.eventList.append(newEvent)

@@ -8,12 +8,16 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+import FirebaseDatabase
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var profileNavigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        profileNavigationBar.topItem?.title = Auth.auth().currentUser?.email
     }
     
     // выход из профиля
@@ -29,9 +33,8 @@ class ThirdViewController: UIViewController {
         let initial = storyboard.instantiateInitialViewController()
         UIApplication.shared.keyWindow?.rootViewController = initial
     }
-    
-    /*
-    // MARK: - Navigation
+
+    /*    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

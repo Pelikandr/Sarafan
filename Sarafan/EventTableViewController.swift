@@ -16,6 +16,8 @@ class EventTableViewController: UITableViewController {
     var selectedEventInfo: String?
     
     @objc func refreshArray() {
+        // удаление из Firebase
+        //Database.database().reference().child("postComments").child(self.postID).removeValue()
         tableView.reloadData()
         refreshControl?.endRefreshing()
     }

@@ -130,8 +130,8 @@
 			children = (
 				8717083921D370B400EF530A /* AppDelegate.swift */,
 				879C1AE2226B690D001F1A9A /* TableViewModel.swift */,
-				879C1AE4226B6F13001F1A9A /* EventTableViewController.swift */,
 				8717083B21D370B400EF530A /* FirstViewController.swift */,
+				879C1AE4226B6F13001F1A9A /* EventTableViewController.swift */,
 				8717086921D401D600EF530A /* ThirdViewController.swift */,
 				878F117121D40C3500C23DE6 /* LoginViewController.swift */,
 				878F117321D40C4700C23DE6 /* SignUpViewController.swift */,

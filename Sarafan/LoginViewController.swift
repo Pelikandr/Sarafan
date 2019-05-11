@@ -47,8 +47,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             DataSource.shared.append(snapshotValue["EventBody"] as! String, newEventInfo: snapshotValue2["EventInfo"] as! String)
         })
         // вызов метода обновления tableView
-        let ETC: EventTableViewController = EventTableViewController()
-        ETC.refreshArray()
+        //let ETC: EventTableViewController = EventTableViewController()
+        //ETC.refreshArray()
         
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "toTabBarController", sender: nil)

@@ -19,9 +19,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        email.delegate = self as? UITextFieldDelegate
-        password.delegate = self as? UITextFieldDelegate
-        passwordConfirm.delegate = self as? UITextFieldDelegate
+        email.delegate = self as UITextFieldDelegate
+        password.delegate = self as UITextFieldDelegate
+        passwordConfirm.delegate = self as UITextFieldDelegate
         email.tag = 0 //теги для return
         password.tag = 1
         passwordConfirm.tag = 2
@@ -95,9 +95,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-    
-
     /*
     // MARK: - Navigation
 

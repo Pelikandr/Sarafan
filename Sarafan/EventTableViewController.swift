@@ -49,6 +49,7 @@ class EventTableViewController: UITableViewController, UIViewControllerPreviewin
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "spl.png")!)
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action:  #selector(refreshArray), for: .valueChanged)
         self.refreshControl = refreshControl
